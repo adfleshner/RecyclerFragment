@@ -15,6 +15,9 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 import com.flesh.library.RecyclerFragment;
+import com.flesh.library.itemAnimators.ScaleInOutItemAnimator;
+import com.flesh.library.itemAnimators.SlideInOutBottomItemAnimator;
+import com.flesh.library.itemAnimators.SlideScaleInOutRightItemAnimator;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -55,6 +58,7 @@ public class MainActivity extends ActionBarActivity {
             setRecyclerAdapter(adapter);
             // Set empty_view
             setEmptyView(R.layout.empty_view);
+            setItemAnimator(new SlideScaleInOutRightItemAnimator(getRecyclerView()));
             setEmptyViewAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         }
 
