@@ -18,7 +18,7 @@ Emptyview not set init.
 
 
 other methods 
-java```
+```java
 public void setItemAnimator(RecyclerView.ItemAnimator animation)
 public void setEmptyViewAnimations(int enterAnimation, int exitAnimation)
 ```
