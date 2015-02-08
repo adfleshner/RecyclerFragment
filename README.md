@@ -11,8 +11,8 @@ public void setLayoutManger(RecyclerView.LayoutManager layout)
 public void setEmptyView(int layout)
 ```
 # Simple to use
-just extend RecyclerFragment 
-add at least setRecyclerAdapter(RecyclerView.Adapter adapter) and you are good to go.
+Just extend RecyclerFragment 
+then add at least setRecyclerAdapter(RecyclerView.Adapter adapter) with your very own adapter and you are good to go.
 Layout manager is setTo LinearLayout by default.
 Emptyview not set init.
 
