@@ -52,14 +52,14 @@ public class MainActivity extends ActionBarActivity {
         public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
             //set the Layout manager
-            setLayoutManger(new LinearLayoutManager(getActivity()));
+//            setLayoutManger(new LinearLayoutManager(getActivity()));
             adapter = new SimpleStringRecyclerViewAdapter(mDataSet);
             //Set Adapter
             setRecyclerAdapter(adapter);
-            // Set empty_view
-            setEmptyView(R.layout.empty_view);
-            setItemAnimator(new SlideScaleInOutRightItemAnimator(getRecyclerView()));
-            setEmptyViewAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+//            // Set empty_view
+//            setEmptyView(R.layout.empty_view);
+//            setItemAnimator(new SlideScaleInOutRightItemAnimator(getRecyclerView()));
+//            setEmptyViewAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         }
 
         @Override
